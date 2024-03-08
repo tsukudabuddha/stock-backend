@@ -1,18 +1,15 @@
-# Backend
+# Stock Backend
+Simple API built in Elixir to fetch data required to calculate historic stock portfolio performance 
 
-To start your Phoenix server:
+## Getting started 
+* Install Elixir
+  * Run the following command in terminal `brew update && brew install elixir`
+* Build dependencies
+  * Run `mix deps.get` once inside `/frontend/`
+* Add Marketstack API Key as environment variable `MARKETSTACK_API_KEY`
+  * for a temporary option run: `export MARKETSTACK_API_KEY=API_KEY_HERE`
+  * for more permanent solution copy command above into your shell config e.g. `~\.zshrc or ~\.profile`
+* Start the Phoenix server
+  * run `mix phx.server`
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+Congrats! Your server should now be available on `localhost:4000`, you can try making a GET request to `localhost:4000/api/fetch-data` with the query params `symbols: string` (e.g. AAPL,NVDA) and `date_initial: string` e.g. ("2024-02-26")

@@ -1,5 +1,7 @@
 # Stock Backend
-Simple API built in Elixir to fetch data required to calculate historic stock portfolio performance 
+Simple API built in Elixir to fetch data required to calculate historic stock portfolio performance
+
+[Frontend Repo](https://github.com/tsukudabuddha/stock-frontend/blob/main/README.md)
 
 ## Getting started 
 * Install Elixir
